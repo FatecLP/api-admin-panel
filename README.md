@@ -1,2 +1,9 @@
-1 - npx tsc
-2 - node dist/api/app.api.js
+1. Primeiro comando 
+```bash
+npx tsc
+```
+
+2. Segundo comando
+```bash
+node dist/api/app.api.js
+```
