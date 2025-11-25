@@ -11,4 +11,6 @@ create table usuarios(
     CONSTRAINT CHK_UserType CHECK (tipoUsuario in ('Comum', 'Admin'))
 );
 
+insert into usuarios values (default, "admin", "admin@gmail.com", "admin1234", "Admin")
+
 desc usuarios;
