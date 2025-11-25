@@ -71,7 +71,6 @@ export class App {
 
             let dd = {
                 nome: request.nome,
-                cpf: request.cpf,
                 email: request.email,
                 senha: request.senha,
                 tipoUsuario: request.tipoUsuario,
@@ -100,7 +99,6 @@ export class App {
 
             let dadosParaAtualizar: Partial<UserRequest> = {};
             if (request.nome) dadosParaAtualizar.nome = request.nome;
-            if (request.cpf) dadosParaAtualizar.cpf = request.cpf;
             if (request.email) dadosParaAtualizar.email = request.email;
             if (request.senha) dadosParaAtualizar.senha = request.senha;
             if (request.tipoUsuario)

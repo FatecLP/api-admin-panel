@@ -7,7 +7,6 @@ export class UserFactory implements IUserFactory{
         return new User(
             0,
             request.nome,
-            request.cpf,
             request.email,
             request.senha,
             request.tipoUsuario

@@ -60,7 +60,6 @@ rota.post("/usuarios", async (req, res) => {
 
     if (
         !request.nome ||
-        !request.cpf ||
         !request.email ||
         !request.senha ||
         !request.tipoUsuario
@@ -93,10 +92,17 @@ rota.put("/usuarios/:id", async (req, res) => {
         return res.status(400).json({ message: "ID de usuário inválido." });
     }
 
+    const usuario = await crud.SearchQueyById(id);
+
+    if (!usuario) {
+        return res
+            .status(404)
+            .json({ message: `Usuário ${id} não encontrado.` });
+    }
+
     if (
         !id &&
         !request.nome &&
-        !request.cpf &&
         !request.email &&
         !request.senha &&
         !request.tipoUsuario

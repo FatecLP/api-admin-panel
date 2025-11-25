@@ -7,7 +7,6 @@ export class UserResponseFactory implements IUserResponseFactory {
     create(user: IUser): UserResponse {
         return new UserResponse(
             user.nome,
-            user.cpf,
             user.email,
             user.senha,
             user.tipoUsuario

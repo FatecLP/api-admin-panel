@@ -6,7 +6,7 @@ export async function connection() {
             host: "localhost",
             user: "root",
             password: "root",
-            database: "menthfy",
+            database: "crud",
         });
 
         return connection;
