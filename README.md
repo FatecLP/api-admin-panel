@@ -9,6 +9,9 @@ Application Programming Interface (API) com **Data Access Object** (DAO) para pe
 - Murilo de Oliveira Sartori
 - Juan Pablo Firmino Ferreira
 
+## 👨🏻‍🏫 Professor
+- **PhD - Bruno Zolotareff dos Santos** (Desenvolvimento Web II: FATEC Diadema - Luigi Papaiz)
+
 ## Tecnologias
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)]()
